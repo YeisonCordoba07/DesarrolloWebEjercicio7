@@ -1,0 +1,118 @@
+:root{
+    --max-width: 1312px;
+    --change-width-footer: 1040px;
+    --change-width-servicio-especial: 1380px;
+    --max-width-movil: 700px;
+
+    --color-amarillo: #ffcd00;
+    --color-azul: #002e6d;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Cartero, 'Helvetiva Neue', Helvetica, Arial, 'Sans Serif';
+}
+
+
+
+
+/* ---------------- |HEADER| ---------------- */
+.header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: antiquewhite;*/
+
+}
+.contenedor-header{
+    width: var(--max-width);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+
+/* parte 1 del header */
+.menu-seccion1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.boton-menu{
+    padding-left: 0px;
+    height: 100%;
+    border-style: none;
+    background-color: transparent;
+}
+.boton-menu > svg{
+    height: 60%;
+    border-left: 1px solid lightgray;
+    padding-left: 20px;
+    width: 50px;
+    height: 50px; 
+}
+
+.menu-seccion1-opciones{
+    margin-left: 40px;
+}
+.menu-enlaces{
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #002e6d;
+    font-weight: bold;
+}
+
+/* parte 2 del header - BUSCADOR  */
+.contenedor-buscador{
+    height: 55px;
+    width: 400px;
+    border-radius: 7px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid rgb(148 148 148);
+    border-bottom-color: #ffcd00;
+    background-color: #eeeeee;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.contenedor-buscador > svg{
+    margin: auto;
+    margin-right: 10px;
+}
+.buscador{
+    width: 100%;
+    height: 25px;
+    margin: 0px 10px 10px 10px;
+    background-color: transparent;
+    
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+
+/* parte 2 del header - LOGIN  */
+.contenedor-iniciar-sesion{
+    display: flex;
+    flex-direction: row;
+}
+.contenedor-iniciar-sesion :nth-child(1) svg{
+    width: 20px;
+}
+.contenedor-iniciar-sesion :nth-child(2){
+    margin-left: 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
