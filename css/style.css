@@ -14,6 +14,8 @@
     padding: 0;
     margin: 0;
     font-family: Cartero, 'Helvetiva Neue', Helvetica, Arial, 'Sans Serif';
+    background-color: lightgray;
+    
 }
 
 
@@ -26,10 +28,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: antiquewhite;*/
-
 }
-.contenedor-header{
+.nav{
     width: var(--max-width);
     display: flex;
     flex-direction: row;
@@ -65,12 +65,18 @@
 .menu-seccion1-opciones{
     margin-left: 40px;
 }
+
 .menu-enlaces{
     text-decoration: none;
     padding-bottom: 10px;
-    border-bottom: 1px solid #002e6d;
-    font-weight: bold;
+    color:  var(--color-azul);
 }
+
+.menu-actual{
+    font-weight: bold;
+    border-bottom: 1px solid #002e6d;
+}
+
 
 /* parte 2 del header - BUSCADOR  */
 .contenedor-buscador{
@@ -80,9 +86,8 @@
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     border: 1px solid rgb(148 148 148);
-    border-bottom-color: #ffcd00;
+    border-bottom-color: var(--color-amarillo);
     background-color: #eeeeee;
-
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -95,17 +100,17 @@
     width: 100%;
     height: 25px;
     margin: 0px 10px 10px 10px;
-    background-color: transparent;
-    
+    background-color: transparent;   
     border: none;
-    border-radius: 0;
     background: none;
+    outline: none;
 }
 
-/* parte 2 del header - LOGIN  */
+/* parte 2 del header - LOGIN */
 .contenedor-iniciar-sesion{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .contenedor-iniciar-sesion :nth-child(1) svg{
     width: 20px;
@@ -114,5 +119,98 @@
     margin-left: 16px;
     text-decoration: none;
     font-weight: bold;
+    color: var(--color-azul);
 }
 
+
+
+
+/* ---------------- |MAIN| ---------------- */
+.bienvenida{
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    border-style: solid;
+    position: relative;
+}
+
+
+/* lado 1 */
+.contenedor-imagen-banner{
+    background-image: url('/img/reenvio_postal_1440x960.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -100px;
+    width: 50%;
+}
+.contenedor-imagen-banner1{
+    position: absolute;
+    right: 200px;
+    top: 90px;
+}
+.contenedor-imagen-banner2{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* lado 2 */
+.bienvenida > :nth-child(2){
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 56px 130px;
+}
+
+.contenedor-bienvenida{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contenedor-bienvenida h1{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+#slogan{
+    font-size: 32px;
+    margin-bottom: 8px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    /*font-weight: lighter;*/
+}
+#descripcion{
+    font-size: 16px;
+    margin-bottom: 32px;
+    line-height: 24px;
+    /*font-weight: lighter;*/
+}
+
+/* boton amarillo */
+.a-boton{
+    text-decoration: none;
+    padding: 20px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.a-boton-amarillo{
+    background-color: var(--color-amarillo);
+    color: var(--color-azul);
+    border-color: #b38f00;
+}
+.a-boton-amarillo:hover{
+    background-color: #b38f00;
+}
+
+
+.a-boton-azul{
+    background-color: var(--color-azul);
+    color: var(--color-amarillo);
+    border-color: var(--color-azul);
+}
