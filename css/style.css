@@ -143,15 +143,15 @@
     background-position-y: -100px;
     width: 50%;
 }
-.contenedor-imagen-banner1{
+.barras-decorativas-banner{
     position: absolute;
     right: 200px;
     top: 90px;
 }
-.contenedor-imagen-banner2{
+.triangulos-decorativos-banner{
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 10px;
+    bottom: -55px;
 }
 
 
@@ -192,11 +192,14 @@
 /* boton amarillo */
 .a-boton{
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     border: 1px;
     border-style: solid;
     border-radius: 8px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .a-boton-amarillo{
@@ -211,6 +214,86 @@
 
 .a-boton-azul{
     background-color: var(--color-azul);
-    color: var(--color-amarillo);
+    color: white;
     border-color: var(--color-azul);
 }
+
+
+
+
+/* ---------------- |ENVIOS| ---------------- */
+.contenedor-envios{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.cajon-envios{
+    display: flex;
+    flex-direction:column;
+    width: 595px;
+    height: 492px;
+
+    background-color: #ffcd00;
+
+    /*border-style: solid;*/
+    border-radius: 10px;
+    padding: 24px;
+}
+.cajon-envios > h1{
+    font-size: 24px;
+    background-color: inherit;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+
+.hacer-seguimiento{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: inherit;
+    margin-bottom: 50px;
+}
+.hacer-seguimiento > .contenedor-buscador{
+    width: 70%;
+}
+.hacer-seguimiento > .a-boton{
+    width: 27%;
+}
+
+
+.contenedor-opciones-envios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: inherit;
+}
+.opciones-envios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid lightgray;
+    text-decoration: none;
+    text-decoration-color: var(--color-azul);
+    border-radius: 8px;
+    background-color: white;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.opciones-envios:hover{
+    text-decoration: underline;
+}
+
+.opciones-envios img{
+    background-color:inherit;
+}
+.opciones-envios p{
+    margin-left: 10px;
+    color: var(--color-azul);
+    background-color: inherit;
+}
+
+
