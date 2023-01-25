@@ -217,6 +217,9 @@
     color: white;
     border-color: var(--color-azul);
 }
+.a-boton-azul:hover{
+    background-color: #000042;
+}
 
 
 
@@ -405,8 +408,15 @@
 .a-enlace{
     font-weight: bold;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-azul);
 }
-.a-enlace > span{
+.a-enlace:hover{
+    text-decoration: underline;
+}
+.a-enlace > svg{
     margin-left: 16px;
 }
 
