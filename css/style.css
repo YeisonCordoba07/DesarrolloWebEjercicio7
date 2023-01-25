@@ -122,7 +122,9 @@
     color: var(--color-azul);
 }
 
-
+.separacion{
+    padding: 40px 0px;
+}
 
 
 /* ---------------- |MAIN| ---------------- */
@@ -325,6 +327,12 @@
     margin-bottom: 16px;
     background-color: inherit;
 }
+.titulo-cajon-envio > h3{
+
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 8px;
+}
 
 .ubicacion-envios{
     display: flex;
@@ -332,8 +340,9 @@
     margin: 30px 0px;
 }
 .ubicacion-envios > span{
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 8px;
+    font-size: 18px;
 }
 
 .contenedor-buscador-pequeño{
@@ -348,6 +357,7 @@
 .contenedor-detalles > span{
     margin-bottom: 8px;
     font-weight:bold;
+    font-size: 18px;
 }
 
 .contenedor-detalles-especificos{
@@ -357,7 +367,6 @@
 
 .detalles-especificos{
     border: 1px solid lightgray;
-
     width: 23%;
     height: 146px;
     padding: 16px;
@@ -369,13 +378,9 @@
     margin: auto;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.103);
 }
-.detalles-especificos > figure{
 
- 
-}
 .detalles-especificos img{
     background-size: cover;
-    
     background-repeat: no-repeat;
     width: 60px;
     height: 60px;
@@ -418,6 +423,64 @@
 }
 .a-enlace > svg{
     margin-left: 16px;
+    height: 56px;
 }
+
+
+
+
+/* ---------------- |SECTION ENVIOS| ---------------- */
+
+.contenedor-section-servicios{
+    width: var(--max-width);
+    margin: auto;
+}
+.contenedor-section-servicios > h2{
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 24px;
+}
+.contenedor-servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.contenedor-servicios > .cajon-envio{
+    width: 32%;
+    height: 436px;
+}
+.contenedor-servicios .cajon-envio > figure{
+    margin-bottom: 24px;
+    width: 176px;
+    height: 156px;
+
+}
+.contenedor-servicios .cajon-envio figure > img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.contenedor-texto-servicios{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+}
+.contenedor-texto-servicios > h2{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.contenedor-texto-servicios > p{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+.a-texto-derecha{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
 
 
