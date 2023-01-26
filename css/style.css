@@ -701,3 +701,121 @@
 .section-informacion-mas-productos > .ilustracion-informacion{
     background-image: url("/img/filatelia_OK.jpg");
 }
+
+
+/* ---------------- | FOOTER | ---------------- */
+.footer{
+    background: white;
+}
+
+.contenedor-footer{
+    width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 85px 24px;
+}
+.contenedor-enlaces-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content:  space-between;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 24px;
+}
+
+
+.footer-redes-sociales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.enlaces-footer{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.enlaces-footer >span{
+    font-size: 24px;
+    font-weight: 100;
+    padding-bottom: 26px;
+}
+.enlaces-footer > a{
+    text-decoration: none;
+    color: var(--color-azul);
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.enlaces-footer > a:hover{
+    text-decoration: underline;
+}
+
+
+.contenedor-otros-enlaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.contenedor-otros-enlaces > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.contenedor-otros-enlaces > div > span{
+    padding-bottom: 16px;
+}
+
+
+
+/* GENRAL tamaño otros metodos de pago */
+.contenedor-enlaces-aplicaciones{
+    width: 35%;
+}
+.contenedor-enlaces-metodos-de-pago{
+    width: 35%;
+}
+.contenedor-enlaces-certificados{
+    width: 20%;
+}
+
+
+/* GENERAL logos otros enlaces footer*/
+.logos-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Descarga la App de Correos */
+.contenedor-enlaces-aplicaciones .logos-footer > a{
+    width: 32%;
+}
+.contenedor-enlaces-aplicaciones .logos-footer > a > img{
+    width: 100%;
+}
+
+
+
+/* Metodos de pago */
+.contenedor-enlaces-metodos-de-pago > .logos-footer > a{
+    width: 15%;
+    border: 1px solid lightgray;
+    padding: 5px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.097);
+}
+.contenedor-enlaces-metodos-de-pago > .logos-footer > a > img{
+    width: 70%;
+}
+
+/* No hace falta Certificados*/
