@@ -630,10 +630,6 @@
 
 /* ---------------- |SECTION TIENDA ONLINE| ---------------- */
 
-.section-otros-servicios > .cajon-envio{
-
-}
-
 .contenedor-section-otros-servicios{
     width: var(--max-width);
     margin: auto;
@@ -671,4 +667,26 @@
     font-size: 18px;
     font-weight: lighter;
     margin-bottom: 32px;
+}
+
+
+
+
+/* ---------------- |SECTION INFORMACION BLOG| ---------------- */
+
+.section-informacion-blog{
+    background-color: white;
+}
+.section-informacion-blog > .contenedor-section-informacion > .cajon-envio{
+    height: auto;
+    width: 65%;
+}
+
+.section-informacion-blog > .ilustracion-informacion{
+    background-image: url("/img/ilustracion-blog-1440x960.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    background-position-y: -50px;
 }
