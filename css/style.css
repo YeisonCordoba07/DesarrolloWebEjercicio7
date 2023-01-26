@@ -687,6 +687,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
-
     background-position-y: -50px;
+}
+
+
+
+
+/* ---------------- |SECTION INFORMACION MAS PRODUCTOS| ---------------- */
+
+.section-informacion-mas-productos{
+    background-color: #f3f2f2;
+}
+.section-informacion-mas-productos > .ilustracion-informacion{
+    background-image: url("/img/filatelia_OK.jpg");
 }
