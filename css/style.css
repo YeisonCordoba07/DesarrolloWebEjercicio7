@@ -485,20 +485,25 @@
 
 
 
-/* ---------------- |SECTION INFORMACIÓN| ---------------- */
+/* ---------------- |SECTION INFORMACIÓN 1| ---------------- */
 
 /* primer cuadro */
 
 .section-informacion{
     background-color: #f3f2f2;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
 }
 .contenedor-section-informacion{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    position: relative;
+    width: var(--max-width);
+
     margin: 65px 0px;
+    
+
 
 }
 
@@ -532,10 +537,36 @@
     position: absolute;
     background-size: cover;
     right: 0px;
-    top: 0px;
+    top: 105px;
     z-index: 0;
 }
 
+
+
+
+
+/* ---------------- |SECTION INFORMACIÓN 2| ---------------- */
+
+.section-informacion2{
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.invertir-lado{
+    position: absolute;
+    left: 0px;
+}
+
+.section-informacion2 .contenedor-section-informacion{
+    justify-content: flex-end;
+}
+.section-informacion2  .ilustracion-informacion{
+    background-image: url("/img/Sobres-y-cajas.jpg");
+}
 
 
 
