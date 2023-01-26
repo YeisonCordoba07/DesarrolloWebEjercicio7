@@ -260,7 +260,7 @@
 .cajon-envio-blanco{
     background-color: white;
     border: 1px solid lightgray;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.194);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.194);
 }
 
 
@@ -480,6 +480,62 @@
     display: flex;
     justify-content: flex-start;
 }
+
+
+
+
+
+/* ---------------- |SECTION INFORMACIÓN| ---------------- */
+
+/* primer cuadro */
+
+.section-informacion{
+    background-color: #f3f2f2;
+
+}
+.contenedor-section-informacion{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    margin: 65px 0px;
+
+}
+
+.contenedor-section-informacion .cajon-envio{
+    padding: 48px 112px;
+    width: 60%;
+    height: 280px;
+    z-index: 1;
+
+}
+.contenedor-section-informacion .cajon-envio > h2{
+    font-size: 32px;
+    font-weight: 100;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--color-amarillo);
+}
+.contenedor-section-informacion .cajon-envio > p{
+    font-size: 17.8px;
+    font-weight: 100;
+    margin: 15px 0px;
+}
+
+
+/* segundo cuadro */
+.ilustracion-informacion{
+    background-image: url("/img/home-particulares.png");
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 350px;
+    border-radius: 8px;
+    position: absolute;
+    background-size: cover;
+    right: 0px;
+    top: 0px;
+    z-index: 0;
+}
+
 
 
 
