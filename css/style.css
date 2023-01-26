@@ -500,11 +500,7 @@
     display: flex;
     flex-direction: row;
     width: var(--max-width);
-
     margin: 65px 0px;
-    
-
-
 }
 
 .contenedor-section-informacion .cajon-envio{
@@ -512,7 +508,6 @@
     width: 60%;
     height: 280px;
     z-index: 1;
-
 }
 .contenedor-section-informacion .cajon-envio > h2{
     font-size: 32px;
@@ -552,8 +547,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    position: relative;
-    
+    position: relative;  
 }
 
 .invertir-lado{
@@ -569,5 +563,66 @@
 }
 
 
+
+
+
+/* ---------------- |SECTION TIENDA ONLINE| ---------------- */
+.section-tienda-online{
+    background-color: var(--color-amarillo);
+}
+.contenedor-section-tienda-online{
+    width: var(--max-width);
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    padding: 165px 0px 80px 70px;
+    background-color: inherit;
+}
+
+/* texto tienda online*/
+.texto-tienda-online{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 40%;
+    background-color: inherit;
+}
+.texto-tienda-online > h2{
+    font-size: 32px;
+    font-weight: 100;
+    margin-bottom: 30px;
+    background-color: inherit;
+}
+.texto-tienda-online > p{
+    font-size: 18px;
+    margin-bottom: 16px;
+    background-color: inherit;
+}
+
+
+
+.texto-tienda-online > a{
+    background-color: inherit;
+}
+.texto-tienda-online > a > span{
+    background-color: inherit;
+}
+.texto-tienda-online > a > svg{
+    background-color: inherit;
+}
+
+
+
+/* imagen tienda online */
+.imagen-tienda-online{
+    width: 40%;
+    display: flex;
+    background-color: inherit;
+}
+.imagen-tienda-online > img{
+    width: 100%;
+    background-color: inherit;
+}
 
 
